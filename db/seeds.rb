@@ -19,11 +19,11 @@ c3 = Course.create(name: "Chemisty")
 c4 = Course.create(name: "Biology")
 c5 = Course.create(name: "Machine Learning")
 
-# Enrollment.create(student_id: s1.id, course_id: c1.id)
-# Enrollment.create(student_id: s2.id, course_id: c1.id)
-# Enrollment.create(student_id: s1.id, course_id: c2.id)
-# Enrollment.create(student_id: s2.id, course_id: c3.id)
-# Enrollment.create(student_id: s1.id, course_id: c4.id)
-# Enrollment.create(student_id: s1.id, course_id: c5.id)
+Enrollment.create(student_id: s1.id, course_id: c1.id)
+Enrollment.create(student_id: s2.id, course_id: c1.id)
+Enrollment.create(student_id: s1.id, course_id: c2.id)
+Enrollment.create(student_id: s2.id, course_id: c3.id)
+Enrollment.create(student_id: s1.id, course_id: c4.id)
+Enrollment.create(student_id: s1.id, course_id: c5.id)
 
 puts 'seeded'

@@ -1,2 +1,8 @@
 <h1>Students Index</h1>
 
+<%= button_to "Add New Student", new_student_path, method: :get %>
+<ul>
+    <% @students.each do |student|%>
+        <li><%= link_to student.name, student_path(student)%></li>
+    <%end%>
+</ul>
