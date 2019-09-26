@@ -9,7 +9,7 @@ Student has many enrollments, student has many courses through enrollments
 Course has many enrollments, course has many students through enrollments 
 Enrollment belongs to a student and a course
 
-## Pre-Setup (This step has already step)
+## Pre-Setup (This step has already been done)
 - rails g model Student name age:integer --no-test-framework
 - rails g model Course name teacher_name --no-test-framework
 
