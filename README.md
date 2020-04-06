@@ -10,19 +10,21 @@ Course has many enrollments, course has many students through enrollments
 Enrollment belongs to a student and a course
 
 ## Pre-Setup (This step has already been done)
-- rails g model Student name age:integer --no-test-framework
-- rails g model Course name teacher_name --no-test-framework
+- `rails g model Student name age:integer --no-test-framework`
+- `rails g model Course name teacher_name --no-test-framework`
 
 
-- rails g controller students index new create show edit update destroy
-- rails g controller courses index 
+- `rails g controller students index new create show edit update destroy`
+- `rails g controller courses index`
+
 
 
 ## Setup
-- rails g model Enrollment student_id:integer course_id:integer --no-test-framework
-- rails g controller enrollments index new create show destroy
-- rails db:migrate
-- rails db:seed
+- `rails g model Enrollment student_id:integer course_id:integer --no-test-framework`
+- `rails g controller enrollments`
+- `rails db:create`
+- `rails db:migrate`
+- `rails db:seed`
 
 ### Deliverables 
 
