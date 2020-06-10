@@ -8,7 +8,7 @@
 
 Student.destroy_all
 Course.destroy_all
-Enrollment.destroy_all
+# Enrollment.destroy_all
 
 s1 = Student.create(name: "Student 1", age: 14)
 s2 = Student.create(name: "Student 2", age: 17)
